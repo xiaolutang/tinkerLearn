@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.tencent.tinker.patch'
 
 android {
     compileSdkVersion 30
@@ -30,4 +31,9 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
+    //引入tinker
+    //可选，用于生成application类
+    annotationProcessor("com.tencent.tinker:tinker-android-anno:${TINKER_VERSION}"){ changing = true }
+    //tinker的核心库
+    implementation("com.tencent.tinker:tinker-android-lib:${TINKER_VERSION}"){ changing = true }
 }
