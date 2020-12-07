@@ -1,8 +1,10 @@
-package com.txl.tinkerlearn;
+package com.txl.tinkerlearn.app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.txl.tinkerlearn.R;
 
 public class MainActivity extends AppCompatActivity {
 
